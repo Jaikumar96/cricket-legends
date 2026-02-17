@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cricket-legends/static/css/main.4a87d856.css",
+    "main.js": "/cricket-legends/static/js/main.37dae95d.js",
+    "index.html": "/cricket-legends/index.html",
+    "main.4a87d856.css.map": "/cricket-legends/static/css/main.4a87d856.css.map",
+    "main.37dae95d.js.map": "/cricket-legends/static/js/main.37dae95d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a87d856.css",
+    "static/js/main.37dae95d.js"
+  ]
+}
