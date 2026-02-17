@@ -223,9 +223,47 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+
+/* Tablet Landscape (1024px and below) */
+@media (max-width: 1024px) {
+  .players-grid {
+    gap: 25px;
+  }
+
   .players-grid.grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .player-card {
+    height: 480px;
+  }
+
+  .player-initials {
+    font-size: 5.5rem;
+  }
+
+  .player-number {
+    font-size: 3.5rem;
+  }
+
+  .player-name {
+    font-size: 1.7rem;
+  }
+
+  .player-info {
+    padding: 22px;
+  }
+}
+
+/* Tablet Portrait (768px and below) */
+@media (max-width: 768px) {
+  .players-grid {
+    gap: 20px;
+    padding: 15px 0;
+  }
+
+  .players-grid.grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
 
   .players-grid.list .card-front {
@@ -245,15 +283,169 @@
     height: 450px;
   }
 
+  .card-inner {
+    border-radius: 20px;
+  }
+
+  .player-initials {
+    font-size: 5rem !important;
+  }
+
+  .player-number {
+    font-size: 3rem !important;
+    top: 15px;
+    right: 15px;
+  }
+
+  .player-info {
+    padding: 20px;
+    gap: 8px;
+  }
+
+  .player-name {
+    font-size: 1.6rem;
+  }
+
+  .player-role {
+    font-size: 0.95rem;
+  }
+
+  .player-country {
+    font-size: 1rem;
+  }
+
+  .view-details-btn {
+    padding: 11px 22px;
+    font-size: 0.9rem;
+  }
+
+  .no-results {
+    padding: 60px 20px;
+  }
+
+  .no-results-icon {
+    font-size: 4rem;
+  }
+
+  .no-results h3 {
+    font-size: 1.8rem;
+  }
+
+  .no-results p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Landscape (640px and below) */
+@media (max-width: 640px) {
+  .players-grid {
+    gap: 18px;
+  }
+
+  .players-grid.grid {
+    grid-template-columns: 1fr;
+  }
+
+  .player-card {
+    height: 420px;
+  }
+
+  .player-initials {
+    font-size: 4.5rem !important;
+  }
+
+  .player-number {
+    font-size: 2.8rem !important;
+  }
+
+  .player-name {
+    font-size: 1.5rem;
+  }
+
+  .player-role {
+    font-size: 0.9rem;
+  }
+
+  .role-icon {
+    font-size: 1.1rem;
+  }
+
+  .player-country {
+    font-size: 0.95rem;
+  }
+
+  .view-details-btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile Portrait (480px and below) */
+@media (max-width: 480px) {
+  .players-grid {
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  .player-card {
+    height: 400px;
+  }
+
+  .card-inner {
+    border-radius: 18px;
+  }
+
   .player-initials {
     font-size: 4rem !important;
   }
 
   .player-number {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
+    top: 12px;
+    right: 12px;
+  }
+
+  .player-info {
+    padding: 18px;
+    gap: 6px;
   }
 
   .player-name {
+    font-size: 1.4rem;
+  }
+
+  .player-role {
+    font-size: 0.85rem;
+    gap: 6px;
+  }
+
+  .role-icon {
+    font-size: 1rem;
+  }
+
+  .player-country {
+    font-size: 0.9rem;
+  }
+
+  .view-details-btn {
+    margin-top: 8px;
+    padding: 9px 18px;
+    font-size: 0.8rem;
+  }
+
+  .no-results {
+    padding: 50px 15px;
+  }
+
+  .no-results-icon {
+    font-size: 3.5rem;
+  }
+
+  .no-results h3 {
     font-size: 1.5rem;
+  }
+
+  .no-results p {
+    font-size: 0.95rem;
   }
 }

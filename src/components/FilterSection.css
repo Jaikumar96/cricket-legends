@@ -160,19 +160,44 @@
   box-shadow: 0 5px 20px rgba(255, 46, 151, 0.6), 0 0 15px rgba(255, 46, 151, 0.3);
 }
 
-@media (max-width: 768px) {
-  .filter-controls {
-    flex-direction: column;
+/* Tablet Landscape (1024px and below) */
+@media (max-width: 1024px) {
+  .filter-section {
+    margin-bottom: 40px;
   }
 
-  .filter-buttons {
-    width: 100%;
-    justify-content: center;
+  .search-container {
+    margin-bottom: 25px;
   }
 
   .filter-btn {
-    padding: 12px 20px;
-    font-size: 0.9rem;
+    padding: 14px 25px;
+    font-size: 0.95rem;
+    gap: 7px;
+  }
+
+  .filter-icon {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablet Portrait (768px and below) */
+@media (max-width: 768px) {
+  .filter-section {
+    margin-bottom: 35px;
+  }
+
+  .search-container {
+    margin-bottom: 20px;
+  }
+
+  .search-wrapper {
+    max-width: 100%;
+  }
+
+  .search-icon {
+    left: 20px;
+    font-size: 1.3rem;
   }
 
   .search-input {
@@ -180,8 +205,108 @@
     font-size: 1rem;
   }
 
+  .clear-search {
+    width: 32px;
+    height: 32px;
+    right: 15px;
+    font-size: 1.1rem;
+  }
+
+  .filter-controls {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .filter-buttons {
+    width: 100%;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .filter-btn {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
   .view-toggle {
     width: 100%;
     justify-content: center;
+  }
+
+  .view-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 1.4rem;
+  }
+}
+
+/* Mobile Landscape (640px and below) */
+@media (max-width: 640px) {
+  .search-input {
+    padding: 16px 50px 16px 55px;
+    font-size: 0.95rem;
+  }
+
+  .search-icon {
+    left: 18px;
+    font-size: 1.2rem;
+  }
+
+  .filter-btn {
+    padding: 11px 18px;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+  }
+
+  .filter-icon {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile Portrait (480px and below) */
+@media (max-width: 480px) {
+  .filter-section {
+    margin-bottom: 30px;
+  }
+
+  .search-container {
+    margin-bottom: 18px;
+  }
+
+  .search-input {
+    padding: 14px 45px 14px 50px;
+    font-size: 0.9rem;
+  }
+
+  .search-icon {
+    left: 15px;
+    font-size: 1.1rem;
+  }
+
+  .clear-search {
+    width: 28px;
+    height: 28px;
+    right: 12px;
+    font-size: 1rem;
+  }
+
+  .filter-buttons {
+    gap: 10px;
+  }
+
+  .filter-btn {
+    padding: 10px 16px;
+    font-size: 0.8rem;
+    flex: 0 1 auto;
+  }
+
+  .filter-icon {
+    font-size: 1rem;
+  }
+
+  .view-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
   }
 }

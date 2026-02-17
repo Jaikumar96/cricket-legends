@@ -139,13 +139,88 @@
 }
 
 /* Responsive */
+
+/* Tablet Landscape (1024px and below) */
+@media (max-width: 1024px) {
+  .loading-icon {
+    font-size: 7rem;
+  }
+
+  .loading-title {
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+  }
+
+  .loading-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 35px;
+  }
+
+  .loading-bar-container {
+    width: 280px;
+  }
+}
+
+/* Tablet Portrait (768px and below) */
 @media (max-width: 768px) {
+  .loading-icon {
+    font-size: 6rem;
+    margin-bottom: 25px;
+  }
+
+  .loading-title {
+    font-size: 3rem;
+    margin-bottom: 18px;
+    letter-spacing: 3px;
+  }
+
+  .loading-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  .loading-bar-container {
+    width: 250px;
+    margin-bottom: 35px;
+  }
+
+  .loading-dots {
+    font-size: 1.3rem;
+  }
+
+  .orb-1, .orb-2, .orb-3 {
+    opacity: 0.3;
+  }
+
+  .orb-1 {
+    width: 350px;
+    height: 350px;
+  }
+
+  .orb-2 {
+    width: 400px;
+    height: 400px;
+  }
+
+  .orb-3 {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Mobile Landscape (640px and below) */
+@media (max-width: 640px) {
+  .loading-content {
+    padding: 30px;
+  }
+
   .loading-icon {
     font-size: 5rem;
   }
 
   .loading-title {
     font-size: 2.5rem;
+    letter-spacing: 2px;
   }
 
   .loading-subtitle {
@@ -153,7 +228,55 @@
   }
 
   .loading-bar-container {
-    width: 80%;
-    max-width: 300px;
+    width: 220px;
+  }
+}
+
+/* Mobile Portrait (480px and below) */
+@media (max-width: 480px) {
+  .loading-content {
+    padding: 20px;
+  }
+
+  .loading-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+
+  .loading-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  .loading-subtitle {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .loading-bar-container {
+    width: 200px;
+    height: 5px;
+    margin-bottom: 30px;
+  }
+
+  .loading-dots {
+    font-size: 1.2rem;
+    gap: 12px;
+  }
+
+  .orb-1 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .orb-2 {
+    width: 350px;
+    height: 350px;
+  }
+
+  .orb-3 {
+    width: 250px;
+    height: 250px;
   }
 }

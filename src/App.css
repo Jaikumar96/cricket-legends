@@ -250,18 +250,63 @@
 }
 
 /* Responsive */
+
+/* Tablet Landscape (1024px and below) */
+@media (max-width: 1024px) {
+  .app-container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .footer {
+    padding: 50px 15px;
+  }
+
+  .footer-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .footer-stats {
+    gap: 20px;
+  }
+}
+
+/* Tablet Portrait (768px and below) */
 @media (max-width: 768px) {
+  .app-container {
+    padding: 12px;
+  }
+
+  .footer {
+    margin-top: 60px;
+    padding: 40px 15px;
+  }
+
   .footer-content h3 {
     font-size: 1.5rem;
   }
 
+  .footer-tagline {
+    font-size: 1rem;
+  }
+
   .footer-stats {
     gap: 15px;
+    flex-direction: row;
   }
 
   .footer-stats span {
     font-size: 0.9rem;
     padding: 10px 20px;
+  }
+
+  .player-modal {
+    max-width: 95%;
+    border-radius: 20px;
+  }
+
+  .modal-header {
+    height: 250px;
   }
 
   .modal-initials {
@@ -270,6 +315,8 @@
 
   .modal-number {
     font-size: 3rem;
+    top: 20px;
+    right: 20px;
   }
 
   .modal-body {
@@ -280,7 +327,104 @@
     font-size: 2rem;
   }
 
+  .modal-role {
+    font-size: 1rem;
+  }
+
+  .modal-country {
+    font-size: 1.1rem;
+  }
+
   .modal-stats {
     grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .modal-stat {
+    padding: 15px;
+  }
+
+  .modal-stat-value {
+    font-size: 1.6rem;
+  }
+
+  .modal-achievement {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  .modal-bio h3 {
+    font-size: 1.3rem;
+  }
+
+  .modal-bio p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile Landscape (640px and below) */
+@media (max-width: 640px) {
+  .footer-stats {
+    gap: 10px;
+  }
+
+  .footer-stats span {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+
+  .modal-header {
+    height: 200px;
+  }
+
+  .modal-initials {
+    font-size: 4rem;
+  }
+
+  .modal-number {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile Portrait (480px and below) */
+@media (max-width: 480px) {
+  .footer-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-tagline {
+    font-size: 0.9rem;
+  }
+
+  .footer-stats {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-stats span {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .footer-copyright {
+    font-size: 0.85rem;
+  }
+
+  .modal-body {
+    padding: 20px;
+  }
+
+  .modal-body h2 {
+    font-size: 1.7rem;
+  }
+
+  .modal-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-close {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
   }
 }

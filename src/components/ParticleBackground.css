@@ -175,3 +175,144 @@
     transform: scale(1.1);
   }
 }
+
+/* Responsive - Optimize for mobile performance */
+
+/* Tablet Landscape (1024px and below) */
+@media (max-width: 1024px) {
+  .gradient-orb {
+    filter: blur(60px);
+  }
+
+  .orb-1 {
+    width: 450px;
+    height: 450px;
+  }
+
+  .orb-2 {
+    width: 550px;
+    height: 550px;
+  }
+
+  .orb-3 {
+    width: 350px;
+    height: 350px;
+  }
+
+  .floating-icon {
+    font-size: 25px;
+  }
+}
+
+/* Tablet Portrait (768px and below) */
+@media (max-width: 768px) {
+  .gradient-orb {
+    filter: blur(50px);
+    opacity: 0.25;
+  }
+
+  .orb-1 {
+    width: 400px;
+    height: 400px;
+  }
+
+  .orb-2 {
+    width: 500px;
+    height: 500px;
+  }
+
+  .orb-3 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .floating-icon {
+    font-size: 22px;
+    opacity: 0.15;
+  }
+
+  .stars-layer::before,
+  .stars-layer::after {
+    box-shadow: 
+      100vw 20vh 1px 0px white,
+      70vw 50vh 1px 0px white,
+      30vw 80vh 1px 0px white,
+      80vw 10vh 1px 1px white,
+      20vw 60vh 1px 0px white,
+      50vw 30vh 1px 1px white,
+      90vw 70vh 1px 0px white,
+      40vw 90vh 1px 0px white,
+      60vw 40vh 1px 1px white,
+      10vw 70vh 1px 0px white;
+  }
+}
+
+/* Mobile Landscape (640px and below) */
+@media (max-width: 640px) {
+  .gradient-orb {
+    filter: blur(40px);
+    opacity: 0.2;
+  }
+
+  .orb-1 {
+    width: 350px;
+    height: 350px;
+  }
+
+  .orb-2 {
+    width: 450px;
+    height: 450px;
+  }
+
+  .orb-3 {
+    width: 250px;
+    height: 250px;
+  }
+
+  .floating-icon {
+    font-size: 20px;
+    opacity: 0.12;
+  }
+}
+
+/* Mobile Portrait (480px and below) */
+@media (max-width: 480px) {
+  .gradient-orb {
+    filter: blur(35px);
+    opacity: 0.18;
+  }
+
+  .orb-1 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .orb-2 {
+    width: 400px;
+    height: 400px;
+  }
+
+  .orb-3 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .floating-icon {
+    font-size: 18px;
+    opacity: 0.1;
+  }
+
+  .stars-layer::before,
+  .stars-layer::after {
+    box-shadow: 
+      100vw 20vh 1px 0px white,
+      30vw 80vh 1px 0px white,
+      80vw 10vh 1px 1px white,
+      50vw 30vh 1px 1px white,
+      60vw 40vh 1px 1px white;
+  }
+
+  .particle-background::before {
+    animation: none;
+  }
+}
